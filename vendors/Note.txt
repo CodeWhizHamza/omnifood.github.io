@@ -1,0 +1,12 @@
+It's the folder where we keep all of our resources that we are not gonna write by our own. 
+
+We are gonna use these things in our project.
+
+We fetch it from internet.
+
+We also place our plugins
+
+Folders: 
+  - css
+  - js
+  - fonts
