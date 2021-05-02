@@ -114,6 +114,22 @@ h3 {
   margin: auto;
 }
 
+/* ----- SCROLL BAR ------ */
+::-webkit-scrollbar {
+  width: 0.4rem;
+  background: #fff;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.5em rgba(0, 0, 0, 0.3);
+  /* padding: 0.2em; */
+}
+::-webkit-scrollbar-thumb {
+  display: block;
+  width: 0.4rem;
+  background-color: #555;
+  border-radius: 0.4em;
+}
+
 /* ----- LAYOUT ------ */
 
 .row {
@@ -132,10 +148,12 @@ header {
   width: 1140px;
   height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 2em 0;
+  padding: 8em 0 2em 0;
+}
+.hero-text-box h1 {
+  text-align: center;
 }
 
 nav {
@@ -504,7 +522,7 @@ cite img {
   }
   .hero-text-box {
     width: 100%;
-    padding: 1em 2em;
+    padding: 8em 2em 2em 2em;
   }
 }
 @media (max-width: 768px) {
@@ -540,6 +558,9 @@ cite img {
   nav {
     flex-direction: column;
     gap: 2em 0;
+  }
+  nav .logo {
+    width: 60px;
   }
   section {
     padding: 4em 1em;
