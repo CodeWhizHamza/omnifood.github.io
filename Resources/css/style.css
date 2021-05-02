@@ -129,11 +129,13 @@ header {
   height: 100vh;
 }
 .hero-text-box {
-  position: absolute;
   width: 1140px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em 0;
 }
 
 nav {
@@ -561,6 +563,10 @@ cite img {
 @media (max-width: 480px) {
   html {
     font-size: 14px;
+  }
+
+  header {
+    height: auto;
   }
 
   section {
